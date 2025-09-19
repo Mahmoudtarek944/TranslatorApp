@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+}
+@media screen and (max-width: 450px) {
+  .content {
+    width: 70% !important;
+  }
+  .area1 {
+    height: 8em !important;
+  }
+  .area2 {
+    height: 8em !important;
+  }
+  .divtextarea {
+    gap: 1.6em !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content {
+    width: 90% !important;
+  }
+}
