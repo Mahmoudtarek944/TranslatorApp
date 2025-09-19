@@ -165,8 +165,12 @@ btnTranslate.addEventListener("click", () => {
     .then((data) => {
       // console.log(data);
       // data.responseData.translatedText   ---> the translate
+      let valueChooseLeft = selectLangugeLeft.value;
+      let valueChooseRight = selectLangugeRight.value;
       if (firstTextArea.value.length === 0) {
         secTextArea.innerHTML = "Please Enter What You Need To Translates";
+      } else if (valueChooseLeft === valueChooseRight) {
+        secTextArea.innerHTML = "Please Select Two Distinct Languages";
       } else {
         secTextArea.innerHTML = data.responseData.translatedText;
       }
